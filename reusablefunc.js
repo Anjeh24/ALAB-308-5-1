@@ -11,6 +11,8 @@ function theSum(){
 }
 console.log(theSum());//15
 
+
+// function that returns average of array
 let tot = 0;
 function theAvg(){
     const arrey2 = [2, 3, 5, 6];
@@ -21,3 +23,18 @@ function theAvg(){
     return tot / arrey2.length;
 }
 console.log(theAvg());//4
+
+//returning longest string in array
+
+let strArr = ['boy', 'girl', 'berries'];
+function longstWrd(){
+    let longstWrd = " ";
+    for (k = 0; k < strArr.length; k++) {
+        if(typeof strArr[k] === "string" && strArr[k].length > longstWrd.length) { // compares length of every word/string
+            longstWrd = strArr[k]; // assigns word to variable if longer than other words.
+        }
+    }
+    return longstWrd;
+}
+
+console.log(longstWrd());

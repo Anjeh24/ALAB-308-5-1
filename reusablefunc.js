@@ -37,4 +37,18 @@ function longstWrd(){
     return longstWrd;
 }
 
-console.log(longstWrd());
+console.log(longstWrd());  //credit; geekforgeeks
+
+//function to return an array of strings that are longer than a given number in the array. 
+
+let mixedArr = ['in', 'to', 'cat', 'bubbles', 2];
+function weirdArr(){
+     let newArr = [];
+     for (l=0; l < mixedArr.length; l++) {
+        if(typeof mixedArr[l] === "string" && mixedArr[l].length > mixedArr[4]){
+             newArr.push(mixedArr[l]);
+        }
+     }
+     return newArr;
+}
+console.log(weirdArr());

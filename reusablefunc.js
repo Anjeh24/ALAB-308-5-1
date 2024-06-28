@@ -52,3 +52,17 @@ function weirdArr(){
      return newArr;
 }
 console.log(weirdArr());
+
+//Taking a number n and printing every number between 1 and n without the use of loops with recursion only.
+function printN(n) {
+   
+    if(n > 0 ){
+        
+       printN(n - 1);
+       console.log(n + " ");
+    } 
+   return;
+}
+let n = 4;
+    
+printN(n);
